@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +18,198 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navNav {
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 5rem;
+  align-items: center;
+  border: 1px solid #bbb;
+}
+.navLi:active {
+  background-color: #04AA6D;
+}
+
+.navLi {
+  float: left;
+  height: auto;
+  padding: 1.8rem;
+  color: white;
+  border-right: 1px solid #bbb;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navLi:hover {
+  background-color: #111;
+}
+
+.navButtonContainer {
+  padding: 1.8rem;
+}
+
+.navButton {
+  float: right;
+  text-align: center;
+}
+.navButton:hover {
+  background-color: #111;
+  color: white;
+}
+
+
+
+.logo{
+  border-radius: 150px;
+  height: 100px;
+}
+
+.homepage-image {
+  margin-top: 5rem;
+  align-items: center;
+  max-height: 20rem;
+  max-width: 20rem;
+  padding: 1rem;
+}
+
+.video-responsive {
+  padding-top: 5rem;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#first {
+  width: 400px;
+  border: 1px solid #bbb;
+  margin-top: 3%;
+  text-align: center;
+  margin-left: 4%;
+  background-color: #333;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.AboutMeName {
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: solid;
+}
+
+.AboutMeSkills {
+  text-decoration: underline;
+}
+
+#second {
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 110rem;
+  border: 1px solid #bbb;
+}
+
+#AboutMeWrapper {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #bbb;
+  margin-top: 10%;
+}
+
+.GrowingUpImage {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+#GrowingWrapper {
+  width: 600px;
+  border: 1px solid #bbb;
+}
+
+#CollegeTown {
+  border: 1px solid #bbb;
+  width: 600px;
+}
+
+#CurrentTown {
+  text-align: center;
+  align-items: center;
+  border: 1px solid #bbb;
+  width: 600px;
+}
+
+.homepage {
+  background-image: url("https://th.bing.com/th/id/R.a0732f8b3693f76363d6e5307ec43996?rik=HNeTZIEimgU65Q&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f10%2fAmazing-Binary-Code-Background.jpg&ehk=3nz3RrRQmrQ7sMFbk9Sd3s%2bnAwFRJD9jcdULveMzcDA%3d&risl=&pid=ImgRaw&r=0");
+  height: 75rem;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  margin-top: 0;
+  padding-top: 5rem;
+}
+
+.homepageContainer {
+  padding-top: 1px;
+  align-items: center;
+  position: relative;
+  display: block;
+  background-color: #333;
+  box-sizing: border-box;
+  width: 55rem;
+  height: 19rem;
+  margin-left: 30%;
+  box-shadow: 3px 4px #111;
 }
